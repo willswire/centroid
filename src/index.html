@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SVG Centroid Calculator</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+            #fileInput {
+                margin: 20px;
+            }
+            #output {
+                margin: 20px;
+                border: 2px solid #000;
+                width: 120px;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SVG Centroid Calculator</h1>
+        <input type="file" id="fileInput" accept="image/svg+xml" />
+        <div id="output"></div>
+        <div id="message"></div>
+        <script src="path-data-polyfill.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
